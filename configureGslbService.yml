@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  connection: local
+
+  vars_files:
+    - "vars/creds.json"
+    - "vars/params.yml"
+    - "vars/hostsAzurePublicIp.yml"
+
+  roles:
+    - role: "avinetworks.avisdk"
+
+  tasks:

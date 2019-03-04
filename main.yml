@@ -1,0 +1,3 @@
+---
+- import_playbook: configureGslb.yml
+- import_playbook: configureGslbService.yml
